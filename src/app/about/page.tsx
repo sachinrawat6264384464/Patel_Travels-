@@ -97,15 +97,15 @@ export default function AboutPage() {
                 &ldquo;Safety, punctuality, and hospitality are not just rules for us—they are a family promise.&rdquo;
               </h2>
               <p className="text-gray-650 leading-relaxed font-light">
-                Welcome to Patel Travels. I am **Soham Patel**, founder and owner. Since our inception in Bhansda Khurd, Badoni, we have operated on a simple fundamental promise: treating every passenger with respect, reliability, and care. We understand that travel is often stressful—whether you are catching a tight business flight, arranging multi-car transits for a wedding delegation, or booking a pilgrimage with elderly parents.
+                Welcome to Patel Travels. I am **Birendra_singh Patel**, founder and owner. Since our inception in Bhansda Khurd, Badoni, we have operated on a simple fundamental promise: treating every passenger with respect, reliability, and care. We understand that travel is often stressful—whether you are catching a tight business flight, arranging multi-car transits for a wedding delegation, or booking a pilgrimage with elderly parents.
               </p>
               <p className="text-gray-650 leading-relaxed font-light">
                 That is why we never engage temporary, unverified drivers. Every car in our fleet is driven by professional, background-checked chauffeurs who take personal pride in your safe journey. When you step into a Patel Travels vehicle, you are in trustworthy hands.
               </p>
-              
+
               <div className="pt-4 flex items-center gap-4">
                 <div className="border-l-4 border-accent pl-4">
-                  <h4 className="font-bold text-primary text-lg font-display">Soham Patel</h4>
+                  <h4 className="font-bold text-primary text-lg font-display">Birendra_singh Patel</h4>
                   <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider">Founder & Owner, Patel Travels</p>
                 </div>
               </div>
@@ -127,7 +127,7 @@ export default function AboutPage() {
       {/* 3. OUR STORY SECTION (SHIFTED AND CONVERTED TO PREMIUM DARK CONTRAST BACKGROUND) */}
       <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 to-primary/70 opacity-95" />
+          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 to-primary/70 opacity-95" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -154,7 +154,7 @@ export default function AboutPage() {
               <p className="text-gray-300 leading-relaxed font-light">
                 Today, we serve travelers all across **Madhya Pradesh** and **Pan-India**. From wedding entourage coordination to religious pilgrims visiting the historic **Pitambara Peeth (Datia)** or **Orchha**, we manage every single ride with the same dedication, cleanliness, and local touch that defined our very first trip.
               </p>
-              
+
               <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
                 <div>
                   <h4 className="text-3xl font-black text-accent font-display">100%</h4>

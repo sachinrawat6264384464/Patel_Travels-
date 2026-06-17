@@ -11,22 +11,12 @@ export default function CarsPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=1920"
-            alt="Highway road"
-            fill
-            className="object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/95 to-primary/80" />
-        </div>
-
+      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
           >
             Our Premium Fleet
           </motion.h1>
@@ -34,7 +24,7 @@ export default function CarsPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-orange-100 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Fully certified, air-conditioned, and meticulously maintained vehicles at your service for safe and comfortable travel.
           </motion.p>
@@ -111,12 +101,11 @@ export default function CarsPage() {
                   {/* Pricing / Booking Box */}
                   <div className="bg-slate-100/70 border border-slate-200/50 p-6 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
                     <div>
-                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider block">Estimated Pricing</span>
+                      <span className="text-gray-500 text-xs font-bold uppercase tracking-wider block">Booking Status</span>
                       <div className="flex items-baseline gap-1.5 mt-1">
-                        <span className="text-2xl font-black text-primary font-display">{vehicle.pricePerKm}</span>
-                        <span className="text-gray-500 text-xs font-medium">/ km</span>
+                        <span className="text-2xl font-black text-primary font-display">Available</span>
                       </div>
-                      <span className="text-gray-400 text-[10px] block mt-1">*Excludes toll, state tax & parking</span>
+                      <span className="text-gray-400 text-[10px] block mt-1">*Contact us to get custom rates</span>
                     </div>
                     
                     <div className="flex gap-2 w-full sm:w-auto">

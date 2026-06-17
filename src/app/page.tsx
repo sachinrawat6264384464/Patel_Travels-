@@ -31,28 +31,28 @@ import BookingTimeline from "@/components/BookingTimeline";
 // FAQ list for Accordion
 const faqs = [
   {
-    question: "How do I calculate the total fare for my trip?",
-    answer: "Our pricing is transparent. It is calculated on a per-kilometer basis (₹16/km for Innova Crysta and ₹11/km for Swift Dzire) plus toll taxes, state taxes (if crossing state borders), and parking charges. Chauffeur night allowance is applicable if the trip extends past 10 PM."
+    question: "Toyota Glanza aur Rumion ka kiraya kitna hai?",
+    answer: "Toyota Glanza aur Toyota Rumion ka kiraya hum competitive aur budget-friendly offer karte hain. Is mein driver ka charge shamil hota hai. Toll, state tax, parking, aur raat ke safar ke liye driver night allowance alag se hota hai. Poora transparent billing system hai — koi hidden charges nahi honge."
   },
   {
-    question: "Do you provide cars for outstation and multi-day tours?",
-    answer: "Yes, we specialize in long-distance outstation travel across Madhya Pradesh, Uttar Pradesh, Rajasthan, Delhi-NCR, and all over India. You can book our vehicles for multi-day tours, and the chauffeur will remain with you throughout the journey."
+    question: "Kya aap shaadi ki baarat aur party booking karte hain?",
+    answer: "Haan! Shaadi party ki booking ke liye aap call ya WhatsApp par sampark kar sakte hain. Dono gaadiya Toyota Glanza (5-seater) aur Toyota Rumion (7-seater) shaadi mein baarat, guest transfer aur local trips ke liye available hain. Advance booking zaroori hai."
   },
   {
-    question: "Is there a minimum daily kilometer limit for outstation bookings?",
-    answer: "Yes, for outstation round trips, a minimum running of 250 kilometers per day is calculated. If the actual travel is less, the charges will still be based on the minimum limit."
+    question: "Kya outstation aur multi-day tour ke liye gaadi milti hai?",
+    answer: "Haan, hum Dabra aur Gwalior se pure Madhya Pradesh, Uttar Pradesh, Rajasthan, Delhi-NCR, aur poore India mein outstation service dete hain. Professional driver poori yatra mein aapke saath rahega. Rate aur bookings ki details ke liye direct hume contact karein."
   },
   {
-    question: "Are your drivers experienced and verified?",
-    answer: "Absolutely. All our chauffeurs are highly experienced local drivers with active commercial driving licenses, deep knowledge of highway routes, and clean background records. They are trained to prioritize family safety and comfort."
+    question: "Kya drivers anubhavi aur verified hain?",
+    answer: "Bilkul. Shri Balaji Travels ke sabhi drivers fully experienced, licensed aur background-verified hain. Unhe highway aur local routes ki acchi jankari hai. Aapke aur aapke parivar ki safety hamari sabse badi priority hai."
   },
   {
-    question: "How can I book a ride, and do I need to pay an advance?",
-    answer: "You can book directly by filling out our online form, calling us, or sending a message on WhatsApp. A small advance amount is required to confirm the booking, especially during wedding seasons and holidays. The remaining balance can be paid to the driver or via UPI during/after the trip."
+    question: "Booking kaise karein? Advance dena padta hai?",
+    answer: "Aap WhatsApp par message karke, direct phone call karke, ya hamare online form se booking enquire kar sakte hain. Shaadi season aur festival bookings ke liye advance payment required hota hai, baaki bacha hua payment aap yatra ke baad de sakte hain."
   },
   {
-    question: "Is Pitambara Peeth (Datia) pick-up and drop available?",
-    answer: "Yes, we regularly cater to devotees visiting the sacred Shri Pitambara Peeth temple in Datia. We provide picking and dropping services from Jhansi Railway Station (VGLJ), Gwalior Airport, or Datia Station directly to the temple and surrounding hotels."
+    question: "Kya Gwalior Airport aur Jhansi Railway Station pickup-drop milti hai?",
+    answer: "Haan, hum Gwalior Airport (GWL), Jhansi Railway Station, aur Dabra se sabhi major stations aur airports ke liye express pickup-drop service dete hain jo 24/7 available hai. Gwalior se dharmik sthal jaise Pitambara Peeth Datia, Orchha, Khajuraho ke liye bhi booking milti hai."
   }
 ];
 
@@ -68,10 +68,10 @@ export default function HomePage() {
 
   // Stats Data
   const stats = [
-    { value: "500+", label: "Happy Journeys" },
+    { value: "300+", label: "Happy Journeys" },
     { value: "100%", label: "On-Time Arrival" },
     { value: "24/7", label: "Customer Support" },
-    { value: "15+", label: "Years Experience" }
+    { value: "10+", label: "Years Experience" }
   ];
 
   // Key Features
@@ -79,22 +79,22 @@ export default function HomePage() {
     {
       icon: <ShieldCheck className="w-8 h-8 text-accent" />,
       title: "Verified Drivers & Safe Travels",
-      description: "Our chauffeurs are background-verified, licensed, and highly trained for safe family travel."
+      description: "Shri Balaji Travels ke sabhi drivers anubhavi, licensed aur background-verified hain. Parivar ki suraksha hamari #1 priority hai."
     },
     {
       icon: <Clock className="w-8 h-8 text-accent" />,
       title: "Punctuality & Reliability",
-      description: "We respect your time. Whether airport pickup or wedding schedule, our cars reach early."
+      description: "Hum aapka samay samjhte hain. Airport pickup ho ya shaadi ki baarat — gaadi hamesha samay par pahunche."
     },
     {
       icon: <Coins className="w-8 h-8 text-accent" />,
-      title: "Affordable Per-Km Rates",
-      description: "Transparent billing with zero hidden costs. Pay only for the distance you cover."
+      title: "Affordable & Best Rates",
+      description: "Transparent billing, zero hidden costs. Apne budget ke hisab se behtareen service payein."
     },
     {
       icon: <Car className="w-8 h-8 text-accent" />,
-      title: "Clean & Sanitized Fleet",
-      description: "Deeply cleaned, odor-free, fully air-conditioned premium Toyota Innova Crysta & Dzire."
+      title: "Clean Toyota Glanza & Rumion",
+      description: "Deeply cleaned, odor-free, fully air-conditioned Toyota Glanza (5-seater) & Toyota Rumion (7-seater) — Dabra ki shaan!"
     }
   ];
 
@@ -129,19 +129,19 @@ export default function HomePage() {
           >
             {/* Business Badge */}
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold tracking-wider text-accent bg-accent/10 border border-accent/20 uppercase">
-              <MapPin className="w-3 h-3" /> Based in Badoni, Datia (M.P.)
+              <MapPin className="w-3 h-3" /> Based in Dabra, Gwalior (M.P.) || Jay Mai Ki
             </span>
 
             {/* Main Headline */}
             <h1 className="font-display text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight leading-tight max-w-4xl mx-auto text-white">
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-white to-accent">
-                Car Rentals & Travels
+                Shri Balaji Travels
               </span>
             </h1>
 
             {/* Subtitle */}
             <p className="text-lg sm:text-xl text-gray-300 max-w-2xl mx-auto font-light leading-relaxed">
-              Explore India comfortably with our premium 7-seater **Toyota Innova Crysta** and high-efficiency **Maruti Swift Dzire**. Specializing in weddings, pilgrimage tours, family trips, and airport transfers.
+              Dabra, Gwalior se <strong>Toyota Glanza</strong> aur <strong>Toyota Rumion</strong> ke saath premium yatra ka anubhav. Shaadi parti, dharmik yatra, outstation aur airport transfer ke liye sampark karen.
             </p>
 
             {/* CTAs */}
@@ -153,7 +153,7 @@ export default function HomePage() {
                 Book Your Ride Now
               </Link>
               <a
-                href="https://wa.me/919109403977?text=Hello%20Patel%20Travels,%20I%20want%20to%20enquire%20about%20booking%20a%20car."
+                href="https://wa.me/919109403977?text=Hello%20Shri%20Balaji%20Travels,%20main%20gaadi%20book%20karna%20chahta%20hun."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl text-base font-bold shadow-lg flex items-center justify-center gap-2 hover:-translate-y-0.5 transition-all duration-200"
@@ -225,12 +225,12 @@ export default function HomePage() {
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Left Col: Info */}
             <div className="lg:col-span-5 space-y-6">
-              <span className="text-accent font-bold tracking-widest uppercase text-sm block">Why Choose Patel Travels</span>
+              <span className="text-accent font-bold tracking-widest uppercase text-sm block">Why Choose Shri Balaji Travels</span>
               <h2 className="text-3xl sm:text-4xl font-display font-extrabold leading-tight">
                 Crafting Worry-Free Highway Experiences
               </h2>
               <p className="text-orange-100 font-light leading-relaxed">
-                As a family-owned business in Datia, we take personal pride in every single booking. We do not treat you as just another booking number — we ensure your family or business guests are driven with maximum safety, care, and polite local hospitalities.
+                Dabra, Gwalior ki shaan — Shri Balaji Travels ek family-owned business hai jahan har booking personal pride ke saath ki jaati hai. Aapka parivar ya mehmaan maximum suraksha, aaram, aur pyaar ke saath safar kare — yahi hamara vaada hai.
               </p>
               
               <div className="space-y-4 pt-4">
@@ -369,11 +369,11 @@ export default function HomePage() {
               <Compass className="w-16 h-16 text-primary animate-spin-slow mb-4" />
               <h3 className="font-display font-extrabold text-2xl text-gray-900 mb-2">Pan-India Operations</h3>
               <p className="text-gray-600 text-sm max-w-md">
-                Strategically located in **Datia district (Badoni)** on the border of Madhya Pradesh and Uttar Pradesh. We easily provide express passenger pickups and tourist transits all over India.
+                Strategically located in Dabra, Gwalior District (M.P.) — NH-75 aur Gwalior-Jhansi highway par. Hum pure Madhya Pradesh aur India mein express pickup aur tourist transit dete hain.
               </p>
               
               <div className="grid grid-cols-3 gap-2 mt-8 w-full max-w-md">
-                {["Madhya Pradesh", "Uttar Pradesh", "Rajasthan", "Delhi-NCR", "Uttarakhand", "Maharashtra"].map((st) => (
+                {["Gwalior", "Dabra", "Datia", "Jhansi", "Shivpuri", "Delhi-NCR"].map((st) => (
                   <div key={st} className="bg-slate-50 border border-slate-100 py-2 rounded-lg text-xs font-bold text-primary">
                     {st}
                   </div>
@@ -388,35 +388,35 @@ export default function HomePage() {
                 Regular Tourist & Local Travel Routes
               </h2>
               <p className="text-gray-600 font-light leading-relaxed">
-                We regularly operate passenger services and tour transfers from our base at **Bhansda Khurd, Badoni (Datia)**. Popular daily and outstation routes include:
+                Shri Balaji Travels Dabra (Gwalior) se operate karta hai. Neeche hamare popular daily aur outstation routes hain:
               </p>
               
               <div className="grid sm:grid-cols-2 gap-4">
                 <div className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Datia & Pitambara Peeth</h4>
-                    <p className="text-xs text-gray-500">Local temple drops and station pickups</p>
+                    <h4 className="font-bold text-sm text-gray-900">Dabra & Gwalior City</h4>
+                    <p className="text-xs text-gray-500">Local pickup-drop, Gwalior Fort & Airport</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
                     <h4 className="font-bold text-sm text-gray-900">Jhansi Railway Station</h4>
-                    <p className="text-xs text-gray-500">Express pickup and drops (25km run)</p>
+                    <p className="text-xs text-gray-500">Express pickup & drops (40km from Dabra)</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Orchha Historical Site</h4>
-                    <p className="text-xs text-gray-500">Tourist packages & heritage temple visits</p>
+                    <h4 className="font-bold text-sm text-gray-900">Pitambara Peeth Datia</h4>
+                    <p className="text-xs text-gray-500">Dharmik darshan & temple visits</p>
                   </div>
                 </div>
                 <div className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Gwalior Airport / Fort</h4>
+                    <h4 className="font-bold text-sm text-gray-900">Gwalior Airport (GWL)</h4>
                     <p className="text-xs text-gray-500">Fast flight connections & sightseeing</p>
                   </div>
                 </div>
@@ -430,7 +430,7 @@ export default function HomePage() {
                 <div className="bg-white p-4 rounded-xl border border-slate-100 shadow-sm flex items-center gap-3">
                   <MapPin className="w-5 h-5 text-accent flex-shrink-0" />
                   <div>
-                    <h4 className="font-bold text-sm text-gray-900">Delhi, Jaipur & Lucknow</h4>
+                    <h4 className="font-bold text-sm text-gray-900">Delhi, Agra & Jaipur</h4>
                     <p className="text-xs text-gray-500">Pan-India long route drop-offs</p>
                   </div>
                 </div>
@@ -550,28 +550,27 @@ export default function HomePage() {
       </section>
 
       {/* 11. FOOTER FINAL CTA */}
-      <section className="bg-primary text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-tr from-orange-950 via-primary to-orange-900 opacity-90" />
+      <section className="bg-white text-gray-900 py-16 border-t border-slate-200 relative overflow-hidden">
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <Award className="w-12 h-12 text-accent mx-auto animate-pulse" />
-          <h2 className="font-display text-3xl sm:text-4xl font-extrabold">Ready to Experience First-Class Road Travel?</h2>
-          <p className="text-orange-100 max-w-xl mx-auto font-light text-sm sm:text-base leading-relaxed">
-            Reach out to us to book your clean Toyota Innova Crysta or Maruti Suzuki Swift Dzire. Get custom itineraries, instant rates, and verified professional drivers.
+          <Award className="w-12 h-12 text-primary mx-auto animate-pulse" />
+          <h2 className="font-display text-3xl sm:text-4xl font-extrabold text-slate-900">Shaadi Party Ki Booking Ke Liye Sampark Karein!</h2>
+          <p className="text-gray-600 max-w-xl mx-auto font-light text-sm sm:text-base leading-relaxed">
+            Toyota Glanza (5-seater) ya Toyota Rumion (7-seater) book karein. Custom itinerary, instant rates, aur verified drivers. || Jay Mai Ki ||
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
               href="/contact?book=true"
-              className="w-full sm:w-auto bg-accent hover:bg-yellow-500 text-slate-950 px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg hover:shadow-accent/15"
+              className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg hover:shadow-primary/15"
             >
               Book via Form
             </Link>
             <a
-              href="https://wa.me/919109403977?text=Hello%20Patel%20Travels,%20I%20want%20to%20book%20a%20car%20now."
+              href="https://wa.me/919109403977?text=Hello%20Shri%20Balaji%20Travels,%20main%20gaadi%20book%20karna%20chahta%20hun."
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto bg-green-600 hover:bg-green-700 text-white px-8 py-3.5 rounded-xl font-bold transition-all shadow-lg flex items-center justify-center gap-2"
             >
-              <MessageCircle className="w-5 h-5 fill-current" /> WhatsApp Reservation
+              <MessageCircle className="w-5 h-5 fill-current" /> WhatsApp: 9109403977
             </a>
           </div>
         </div>

@@ -10,22 +10,12 @@ export default function ContactPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?auto=format&fit=crop&q=80&w=1920"
-            alt="Customer service call workspace"
-            fill
-            className="object-cover opacity-25"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/95 to-primary/80" />
-        </div>
-
+      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
           >
             Contact & Reservation
           </motion.h1>
@@ -33,7 +23,7 @@ export default function ContactPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-orange-100 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Get in touch with our booking agent, pre-calculate trip fare rates, or reserve your vehicle directly on WhatsApp.
           </motion.p>
@@ -49,7 +39,7 @@ export default function ContactPage() {
               <div className="space-y-4">
                 <span className="text-accent font-bold tracking-widest text-xs uppercase">Get In Touch</span>
                 <h2 className="text-3xl font-display font-extrabold text-gray-900 leading-tight">
-                  Patel Travels Office
+                  Shri Balaji Travels
                 </h2>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Have questions about pricing, route passes, or vehicle decorations? Contact our owner/operator or visit our base location.
@@ -65,8 +55,8 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-bold text-gray-950 text-sm">Office Address</h4>
                     <p className="text-gray-500 text-sm mt-1">
-                      Bhansda Khurd, Badoni, Datia District,<br />
-                      Madhya Pradesh, India - 475686
+                      Deedar Colony, Ward No. 11,<br />
+                      Dabra, Dist. Gwalior (M.P.) 475110
                     </p>
                   </div>
                 </div>
@@ -78,7 +68,10 @@ export default function ContactPage() {
                   <div>
                     <h4 className="font-bold text-gray-950 text-sm">Phone Call Booking</h4>
                     <a href="tel:+919109403977" className="text-primary hover:text-accent font-semibold text-sm mt-1 block">
-                      +91 91094 03977
+                      +91 91094 03977 (Virendrasingh Patel)
+                    </a>
+                    <a href="tel:+919425726316" className="text-primary hover:text-accent font-semibold text-sm block">
+                      +91 94257 26316
                     </a>
                   </div>
                 </div>
@@ -89,8 +82,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-950 text-sm">Email Support</h4>
-                    <a href="mailto:info@pateltravels.com" className="text-gray-500 hover:text-primary text-sm mt-1 block">
-                      info@pateltravels.com
+                    <a href="mailto:info@shribalajitravels.com" className="text-gray-500 hover:text-primary text-sm mt-1 block">
+                      info@shribalajitravels.com
                     </a>
                   </div>
                 </div>
@@ -111,8 +104,8 @@ export default function ContactPage() {
               {/* Map Embed Frame */}
               <div className="rounded-2xl overflow-hidden shadow-md border border-slate-200 h-64 relative bg-slate-100">
                 <iframe
-                  title="Patel Travels Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57545.98188177579!2d78.3491410185966!3d25.667232230554526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39771141df3c3eef%3A0x6b4f8cb1ccca6eb!2sDatia%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  title="Shri Balaji Travels Location — Dabra, Gwalior"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14390.123456789!2d78.3341!3d25.8855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3976c9e4a3b18e69%3A0x1234567890abcdef!2sDabra%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}

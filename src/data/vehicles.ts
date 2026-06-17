@@ -17,69 +17,72 @@ export interface Vehicle {
 
 export const vehicles: Vehicle[] = [
   {
-    id: "innova-crysta",
-    name: "Toyota Innova Crysta",
-    type: "Premium MUV / SUV",
-    passengers: 7,
-    luggage: "4-5 Bags",
-    transmission: "Manual/Automatic",
-    fuel: "Diesel",
+    id: "toyota-glanza",
+    name: "Toyota Glanza",
+    type: "Premium Hatchback",
+    passengers: 5,
+    luggage: "2-3 Bags",
+    transmission: "Manual / AMT",
+    fuel: "Petrol / CNG",
     ac: true,
-    pricePerKm: "₹16/km",
-    image: "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=800",
+    pricePerKm: "Contact for Rates",
+    image: "/images/glanza.png",
     images: [
-      "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&q=80&w=800"
+      "/images/glanza.png",
+      "/images/glanza.png",
+      "/images/glanza.png"
     ],
     features: [
-      "Plush Leather Captain Seats",
-      "Automatic Climate Control (AC)",
-      "Ample Legroom & Headroom",
-      "High-speed Charging Ports",
-      "Premium Audio System",
-      "Dual Airbags & ABS Safety",
-      "Top-tier Suspension for smooth long rides"
+      "Comfortable Fabric & Premium Seating",
+      "Powerful Automatic AC",
+      "Excellent Petrol / CNG Fuel Efficiency",
+      "Bluetooth & USB Music System",
+      "Dual Front Airbags + ABS Safety",
+      "Rear Parking Camera",
+      "Auto Headlamps & Wipers"
     ],
-    description: "The Toyota Innova Crysta is the gold standard of travel comfort in India. Known for its spacious cabin, premium ride quality, and robust performance on hill stations and highways alike. Ideal for family vacations, corporate events, and wedding delegations.",
+    description: "Toyota Glanza ek premium hatchback hai jo comfort, mileage aur style ka behtareen combination hai. Dabra aur Gwalior district mein shaadi, party, local aur outstation trips ke liye bilkul perfect hai. The perfect compact premium ride for city commutes, wedding guests, and short outstation journeys.",
     suitability: [
-      "Long-distance family tours",
-      "Wedding guest transportation",
-      "Outstation corporate trips",
-      "Religious pilgrimage groups",
-      "Chauffeur-driven luxury travel"
+      "Wedding & Party Guest Transportation",
+      "Airport & Railway Station Transfers",
+      "Local Dabra / Gwalior Commuting",
+      "Short Outstation Trips",
+      "Budget-friendly Family Travel"
     ]
   },
   {
-    id: "swift-dzire",
-    name: "Maruti Suzuki Swift Dzire",
-    type: "Comfort Sedan",
-    passengers: 4,
-    luggage: "2-3 Bags",
-    transmission: "Manual",
-    fuel: "CNG/Petrol",
+    id: "toyota-rumion",
+    name: "Toyota Rumion",
+    type: "Premium MPV / 7-Seater",
+    passengers: 7,
+    luggage: "4-5 Bags",
+    transmission: "Manual / Automatic",
+    fuel: "Petrol / CNG",
     ac: true,
-    pricePerKm: "₹11/km",
-    image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800",
+    pricePerKm: "Contact for Rates",
+    image: "/images/rumion.png",
     images: [
-      "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf0a3?auto=format&fit=crop&q=80&w=800",
-      "https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&q=80&w=800"
+      "/images/rumion.png",
+      "/images/rumion.png",
+      "/images/rumion.png"
     ],
     features: [
-      "Comfortable Fabric Seating",
-      "Powerful Air Conditioning",
-      "Excellent Fuel Efficiency",
-      "Bluetooth Enabled Music System",
-      "Dual Airbags & ABS",
-      "Generous Boot Space"
+      "7-Seater Spacious Cabin",
+      "Automatic Climate Control AC",
+      "Captain Seats & Ample Legroom",
+      "9-inch Touchscreen Infotainment",
+      "6 Airbags & Advanced Safety",
+      "360° Parking Camera",
+      "Sliding Rear Door for Easy Entry",
+      "Premium Suspension for Long Journeys"
     ],
-    description: "The Maruti Swift Dzire is India's favorite sedan for city commutes, short outstations, and quick airport/railway transfers. It offers a pocket-friendly yet extremely comfortable and smooth ride for small families or business travelers.",
+    description: "Toyota Rumion ek shandar 7-seater MPV hai jo bade parivaron, shaadi ki baarat aur lambi outstation yaatraon ke liye perfect hai. Comfortable seats, bada cabin aur Toyota ki trusted quality ise Dabra-Gwalior area ka sabse pasandida 7-seater banati hai.",
     suitability: [
-      "Airport & Railway Station pickups/drops",
-      "Daily local commuting & sightseeing",
-      "Short one-way and round trips",
-      "Budget-friendly family travel"
+      "Wedding Baarat & Family Outings",
+      "Religious Pilgrimage Group Tours",
+      "Long-distance Outstation Travel",
+      "Corporate Group Transfers",
+      "Chardham / Ayodhya / Temple Tours"
     ]
   }
 ];

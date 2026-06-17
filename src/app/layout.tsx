@@ -24,16 +24,17 @@ export const metadata: Metadata = {
   title: SEO_DATA.title,
   description: SEO_DATA.description,
   keywords: [
-    "car rental Datia",
-    "taxi service Datia",
-    "Patel Travels",
-    "Innova Crysta rental Datia",
-    "wedding car rental Datia",
+    "Shri Balaji Travels",
+    "car rental Dabra",
+    "taxi service Gwalior",
+    "Toyota Glanza rental Dabra",
+    "Toyota Rumion 7 seater Gwalior",
+    "shaadi parti car booking Dabra",
     "outstation taxi Madhya Pradesh",
-    "Badoni car hire",
-    "travel agency Datia",
-    "Bundelkhand tours",
-    "tourist cab Jhansi Gwalior"
+    "car hire Dabra Gwalior",
+    "travel agency Dabra",
+    "tourist cab Gwalior Jhansi",
+    "Virendrasingh Patel"
   ],
   metadataBase: new URL(SEO_DATA.url),
   alternates: {
@@ -46,10 +47,10 @@ export const metadata: Metadata = {
     siteName: SEO_DATA.businessName,
     images: [
       {
-        url: "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=1200&h=630",
-        width: 1200,
-        height: 630,
-        alt: "Patel Travels Innova Crysta",
+        url: "https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80",
+        width: 664,
+        height: 374,
+        alt: "Shri Balaji Travels — Toyota Rumion",
       },
     ],
     locale: "en_IN",
@@ -59,7 +60,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SEO_DATA.title,
     description: SEO_DATA.description,
-    images: ["https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=1200&h=630"],
+    images: ["https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80"],
   },
 };
 

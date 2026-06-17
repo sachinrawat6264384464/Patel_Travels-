@@ -141,7 +141,7 @@ export const services: Service[] = [
   {
     id: "group-travel",
     title: "Group Tours",
-    description: "Travelling with a larger crew? Use our 7-seater Toyota Innova Crysta for group picnics, social groups, and corporate team-outings.",
+    description: "Travelling with a larger crew? Use our 7-seater Toyota Rumion for group picnics, social gatherings, and corporate team-outings. Comfortable, spacious, and perfect for groups up to 7 passengers.",
     iconName: "Users2",
     bgImage: "https://images.unsplash.com/photo-1539635278303-d4002c07eae3?auto=format&fit=crop&q=80&w=800",
     benefits: [

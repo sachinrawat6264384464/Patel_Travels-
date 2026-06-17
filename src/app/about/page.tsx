@@ -32,56 +32,46 @@ export default function AboutPage() {
 
   const milestones = [
     {
-      year: "2010",
-      title: "Inception in Bhansda Khurd",
-      description: "Started local passenger transport with a single vehicle, serving local communities in Badoni and Datia."
-    },
-    {
       year: "2015",
-      title: "Fleet Expansion",
-      description: "Acquired a comfort sedan (Swift Dzire) to serve daily railway passengers commuting to Jhansi and Gwalior stations."
+      title: "Dabra mein shuruat",
+      description: "Ek gaadi se local passenger transport ki shuruaat. Deedar Colony, Dabra ke parivaron ko reliable transport dena shuru kiya."
     },
     {
-      year: "2019",
-      title: "Premium Category Introduction",
-      description: "Added the high-end Toyota Innova Crysta MUV, offering luxurious long-distance outstation travel packages."
+      year: "2018",
+      title: "Toyota Glanza Fleet mein Shamil",
+      description: "Shaadi parti aur local commute ke liye Toyota Glanza add ki. Dabra aur Gwalior mein demand badhne lagi."
     },
     {
-      year: "2023",
-      title: "Pan-India Travel Network",
-      description: "Expanded booking partnerships, allowing travelers from anywhere in India to pre-book pilgrimage and wedding packages."
+      year: "2021",
+      title: "Toyota Rumion — 7-Seater MPV",
+      description: "Bade parivaron aur pilgrimage groups ke liye Toyota Rumion (7-seater) fleet mein add ki. Outstation bookings mein zabardasth growth."
+    },
+    {
+      year: "2024",
+      title: "Pan-India Operations",
+      description: "Gwalior, Jhansi, Datia, Shivpuri se lekar Ayodhya, Vaishno Devi, Chardham tak booking. WhatsApp se instant confirmation."
     }
   ];
 
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1920"
-            alt="Highway travel"
-            fill
-            className="object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/95 to-primary/80" />
-        </div>
-
+      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
           >
-            About Patel Travels
+            About Shri Balaji Travels
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-orange-100 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
-            Providing premium, reliable, and family-safe chauffeured car rental services based in Datia (Madhya Pradesh) since 2010.
+            Toyota Glanza aur Rumion ke saath premium, reliable, aur family-safe chauffeured car rental. Dabra, Gwalior (Madhya Pradesh) se poore India mein service.
           </motion.p>
         </div>
       </section>
@@ -97,16 +87,16 @@ export default function AboutPage() {
                 &ldquo;Safety, punctuality, and hospitality are not just rules for us—they are a family promise.&rdquo;
               </h2>
               <p className="text-gray-650 leading-relaxed font-light">
-                Welcome to Patel Travels. I am **Birendra_singh Patel**, founder and owner. Since our inception in Bhansda Khurd, Badoni, we have operated on a simple fundamental promise: treating every passenger with respect, reliability, and care. We understand that travel is often stressful—whether you are catching a tight business flight, arranging multi-car transits for a wedding delegation, or booking a pilgrimage with elderly parents.
+                Aapka swagat hai Shri Balaji Travels mein. Main hun <strong>Virendrasingh Patel</strong>, founder and owner. Deedar Colony, Dabra, Gwalior se hamne ek simple promise ke saath shuruaat ki: har passenger ko respect, reliability, aur care ke saath travel karwana. Hum jaante hain safar kabhi kabhi stressful hota hai — chahe aap airport flight pakad rahe ho, shaadi mein baarat arrange kar rahe ho, ya buzurg maata-pita ke saath dharmik yatra par ja rahe ho.
               </p>
               <p className="text-gray-650 leading-relaxed font-light">
-                That is why we never engage temporary, unverified drivers. Every car in our fleet is driven by professional, background-checked chauffeurs who take personal pride in your safe journey. When you step into a Patel Travels vehicle, you are in trustworthy hands.
+                Isliye hum kabhi bhi temporary ya unverified drivers nahi rakhte. Hamari har gaadi professional, background-checked chauffeurs chalate hain jo aapki suraksha ko personal zimmedari maante hain. Jab aap Shri Balaji Travels mein baithe hain, aap surakshit haath mein hain — yahi hamara vaada hai.
               </p>
 
               <div className="pt-4 flex items-center gap-4">
                 <div className="border-l-4 border-accent pl-4">
-                  <h4 className="font-bold text-primary text-lg font-display">Birendra_singh Patel</h4>
-                  <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider">Founder & Owner, Patel Travels</p>
+                  <h4 className="font-bold text-primary text-lg font-display">Virendrasingh Patel</h4>
+                  <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider">Founder & Owner — Shri Balaji Travels, Dabra</p>
                 </div>
               </div>
             </div>
@@ -115,7 +105,7 @@ export default function AboutPage() {
             <div className="lg:col-span-5 relative h-[420px] w-full rounded-2xl overflow-hidden shadow-2xl border border-slate-100">
               <Image
                 src="/images/owner.jpg"
-                alt="Soham Patel - Owner of Patel Travels"
+                alt="Virendrasingh Patel - Owner of Shri Balaji Travels, Dabra"
                 fill
                 className="object-cover"
               />
@@ -135,8 +125,8 @@ export default function AboutPage() {
             {/* Image side */}
             <div className="lg:col-span-6 relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl border border-white/10">
               <Image
-                src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=800"
-                alt="Toyota Innova Crysta touring on highway"
+                src="https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80"
+                alt="Toyota Rumion — Shri Balaji Travels Dabra Gwalior"
                 fill
                 className="object-cover"
               />
@@ -149,10 +139,10 @@ export default function AboutPage() {
                 A Family-Owned Business Built on Trust
               </h2>
               <p className="text-gray-300 leading-relaxed font-light">
-                Patel Travels started with a humble ambition: to provide the local families of **Bhansda Khurd** and **Badoni** with a high-quality transport option they could rely on. In travel, safety is paramount. Our goal was to make sure when a daughter, mother, or elderly relative sits in our car, they feel as safe as traveling in their own family vehicle.
+                Shri Balaji Travels ki shuruaat ek humble ambition se hui: Dabra aur Gwalior ke parivaron ko ek aisi high-quality transport dena jis par wo rely kar sakein. Safar mein suraksha sarvopari hai. Hamara lakshya tha ki jab koi beti, maa, ya buzurg hamari gaadi mein baithe — unhe waise hi surakshit mahsoos ho jaise apne ghar ki gaadi mein.
               </p>
               <p className="text-gray-300 leading-relaxed font-light">
-                Today, we serve travelers all across **Madhya Pradesh** and **Pan-India**. From wedding entourage coordination to religious pilgrims visiting the historic **Pitambara Peeth (Datia)** or **Orchha**, we manage every single ride with the same dedication, cleanliness, and local touch that defined our very first trip.
+                Aaj hum pure Madhya Pradesh aur pan-India me yatriyon ki seva karte hain. Shaadi ki baarat se lekar Pitambara Peeth Datia, Orchha, Ayodhya ke dharmik darshan tak — har yatra mein wahi dedication, saafai, aur local touch jo hamari pehli trip se hai.
               </p>
 
               <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">

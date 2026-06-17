@@ -46,9 +46,9 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <span className="font-display font-black text-2xl tracking-wide flex items-center">
-              <span className="text-orange-600 mr-1">PATEL</span>
-              <span className="text-accent text-xl">TRAVELS</span>
+            <span className="font-display font-black text-xl tracking-wide flex items-center leading-tight">
+              <span className="text-orange-600 mr-1">श्री बालाजी</span>
+              <span className="text-accent">ट्रैवल्स</span>
             </span>
           </Link>
 

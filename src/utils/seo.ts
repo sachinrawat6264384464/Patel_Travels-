@@ -1,20 +1,23 @@
 export const SEO_DATA = {
-  title: "Patel Travels | Premium Car Rental & Travel Service in Datia, MP",
-  description: "Luxury car rental, wedding transportation, outstation tours, and tour travel bookings in Bhansda Khurd, Badoni, Datia (Madhya Pradesh). Hire Toyota Innova Crysta & Swift Dzire with professional drivers.",
-  url: "https://pateltravels.com", // Placeholder URL for SEO references
-  businessName: "Patel Travels",
+  title: "Shri Balaji Travels | Toyota Glanza & Rumion — Car Rental Dabra, Gwalior MP",
+  description: "Shri Balaji Travels — Toyota Glanza & Rumion ki booking ke liye sampark karen. Shaadi parti, outstation, airport transfer, Dabra Gwalior MP. Call: 9109403977 / 9425726316",
+  url: "https://shribalajitravels.com",
+  businessName: "Shri Balaji Travels",
+  ownerName: "Virendrasingh Patel",
   phone: "+91 91094 03977",
-  email: "info@pateltravels.com",
+  phone2: "+91 94257 26316",
+  email: "info@shribalajitravels.com",
   address: {
-    street: "Bhansda Khurd, Badoni",
-    city: "Datia",
+    street: "Deedar Colony, Ward No. 11",
+    city: "Dabra",
     state: "Madhya Pradesh",
-    zip: "475686",
+    district: "Gwalior",
+    zip: "475110",
     country: "India"
   },
   geo: {
-    latitude: "25.7051",
-    longitude: "78.3847"
+    latitude: "25.8855",
+    longitude: "78.3341"
   }
 };
 
@@ -23,7 +26,7 @@ export function getLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": SEO_DATA.businessName,
-    "image": "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=800",
+    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80",
     "@id": SEO_DATA.url,
     "url": SEO_DATA.url,
     "telephone": SEO_DATA.phone,
@@ -44,21 +47,13 @@ export function getLocalBusinessSchema() {
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
       "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-        "Sunday"
+        "Monday", "Tuesday", "Wednesday", "Thursday",
+        "Friday", "Saturday", "Sunday"
       ],
       "opens": "00:00",
       "closes": "23:59"
     },
-    "sameAs": [
-      "https://facebook.com/pateltravels", // placeholders
-      "https://instagram.com/pateltravels"
-    ]
+    "sameAs": []
   };
 }
 
@@ -72,18 +67,10 @@ export function getCarRentalSchema() {
       "telephone": SEO_DATA.phone
     },
     "areaServed": [
-      {
-        "@type": "AdministrativeArea",
-        "name": "Madhya Pradesh"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "Uttar Pradesh"
-      },
-      {
-        "@type": "AdministrativeArea",
-        "name": "India"
-      }
+      { "@type": "AdministrativeArea", "name": "Gwalior" },
+      { "@type": "AdministrativeArea", "name": "Dabra" },
+      { "@type": "AdministrativeArea", "name": "Madhya Pradesh" },
+      { "@type": "AdministrativeArea", "name": "India" }
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -93,16 +80,16 @@ export function getCarRentalSchema() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Toyota Innova Crysta - Premium 7-Seater MUV",
-            "description": "Premium luxury travel suitable for weddings, pilgrimages, outstation tours, and family holidays."
+            "name": "Toyota Glanza - Premium Hatchback",
+            "description": "Ideal for weddings, airport transfers, local commuting and short outstation trips in Dabra & Gwalior."
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Maruti Suzuki Swift Dzire - Comfort Sedan",
-            "description": "Perfect for airport transfers, railway station pick and drop, city trips, and budget travel."
+            "name": "Toyota Rumion - 7-Seater MPV",
+            "description": "Perfect for large families, wedding baarats, pilgrimages, and long outstation journeys."
           }
         }
       ]

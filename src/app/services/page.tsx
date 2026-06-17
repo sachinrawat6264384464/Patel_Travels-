@@ -46,22 +46,12 @@ export default function ServicesPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?auto=format&fit=crop&q=80&w=1920"
-            alt="Scenic mountain road"
-            fill
-            className="object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/95 to-primary/80" />
-        </div>
-
+      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
           >
             Our Travel Services
           </motion.h1>
@@ -69,7 +59,7 @@ export default function ServicesPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-orange-100 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Explore our comprehensive range of 14+ specialized passenger transportation packages built around absolute comfort, safety, and reliability.
           </motion.p>
@@ -155,23 +145,22 @@ export default function ServicesPage() {
       </section>
 
       {/* 3. BOOKING CTA */}
-      <section className="bg-primary text-white py-16 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-tr from-orange-950 via-primary to-orange-900 opacity-95" />
+      <section className="bg-white text-gray-900 py-16 border-t border-slate-200 relative overflow-hidden">
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
-          <h2 className="text-3xl font-display font-extrabold text-white">Need a Customized Travel Package?</h2>
-          <p className="text-orange-100 max-w-xl mx-auto text-sm leading-relaxed">
+          <h2 className="text-3xl font-display font-extrabold text-slate-900">Need a Customized Travel Package?</h2>
+          <p className="text-gray-600 max-w-xl mx-auto text-sm leading-relaxed">
             If you have complex itineraries or multi-destination sightseeing tours (e.g. Datia, Orchha, Khajuraho, Gwalior altogether), we will design a custom fare estimate just for you.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
             <Link
               href="/contact"
-              className="w-full sm:w-auto bg-accent hover:bg-yellow-500 text-slate-950 px-8 py-3 rounded-xl font-bold shadow-md transition-all"
+              className="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-8 py-3 rounded-xl font-bold shadow-md transition-all"
             >
               Get Custom Quote
             </Link>
             <a
               href="tel:+919109403977"
-              className="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white border border-white/20 px-8 py-3 rounded-xl font-bold backdrop-blur-sm flex items-center justify-center gap-2 transition-all"
+              className="w-full sm:w-auto bg-slate-100 hover:bg-slate-200 text-gray-800 border border-slate-200 px-8 py-3 rounded-xl font-bold flex items-center justify-center gap-2 transition-all"
             >
               <Phone className="w-4 h-4" /> Call Owner
             </a>

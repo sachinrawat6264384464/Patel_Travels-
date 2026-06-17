@@ -53,8 +53,9 @@ export default function VehicleCard({ vehicle }: VehicleCardProps) {
               <Snowflake className="w-4 h-4 text-primary" />
               <span>Climate Control</span>
             </div>
-            <div className="flex items-center gap-2 text-gray-700 text-sm font-semibold text-primary">
-              <span>Est. {vehicle.pricePerKm}</span>
+            <div className="flex items-center gap-2 text-gray-700 text-sm">
+              <Check className="w-4 h-4 text-primary" />
+              <span>Verified Ride</span>
             </div>
           </div>
 

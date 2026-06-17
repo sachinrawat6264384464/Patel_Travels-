@@ -49,7 +49,7 @@ export default function FloatingButtons() {
 
       {/* WhatsApp Button */}
       <a
-        href="https://wa.me/919109403977?text=Hello!%20I%20want%20to%20inquire%20about%20booking%20a%20car."
+        href="https://wa.me/919109403977?text=Hello%20Shri%20Balaji%20Travels!%20Main%20gaadi%20book%20karna%20chahta%20hun.%20Toyota%20Glanza%20ya%20Rumion%20ki%20jankari%20chahiye."
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 hover:bg-green-600 text-white p-3.5 rounded-full shadow-lg transition-all duration-300 hover:scale-110 flex items-center justify-center animate-bounce focus:outline-none"

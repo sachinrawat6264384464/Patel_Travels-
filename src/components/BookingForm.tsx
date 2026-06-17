@@ -24,7 +24,7 @@ export default function BookingForm() {
     const waText = `*New Booking Inquiry* 🚗\n` +
       `*Name:* ${data.name}\n` +
       `*Phone:* ${data.phone}\n` +
-      `*Vehicle:* ${data.vehicle === "innova" ? "Toyota Innova Crysta" : data.vehicle === "dzire" ? "Maruti Swift Dzire" : "Any Available"}\n` +
+      `*Vehicle:* ${data.vehicle === "glanza" ? "Toyota Glanza (5 Seater)" : data.vehicle === "rumion" ? "Toyota Rumion (7 Seater)" : "Any Available"}\n` +
       `*Pickup:* ${data.pickup}\n` +
       `*Destination:* ${data.destination}\n` +
       `*Travel Date:* ${data.date}\n` +
@@ -99,10 +99,10 @@ export default function BookingForm() {
                 {...register("vehicle", { required: "Please select a vehicle" })}
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm text-gray-800 bg-white"
               >
-                <option value="">Choose a vehicle</option>
-                <option value="innova">Toyota Innova Crysta (7 Seater)</option>
-                <option value="dzire">Maruti Swift Dzire (4 Seater)</option>
-                <option value="any">Any Available (Best Rate)</option>
+                <option value="">Gaadi chunein (Choose Vehicle)</option>
+                <option value="glanza">Toyota Glanza — 5 Seater</option>
+                <option value="rumion">Toyota Rumion — 7 Seater</option>
+                <option value="any">Koi bhi (Any Available)</option>
               </select>
             </div>
             {errors.vehicle && <span className="text-red-500 text-xs mt-1">{errors.vehicle.message}</span>}
@@ -133,7 +133,7 @@ export default function BookingForm() {
               <MapPin className="absolute left-3.5 top-1/2 -translate-y-1/2 w-4.5 h-4.5 text-gray-400" />
               <input
                 type="text"
-                placeholder="e.g. Datia Railway Station / Badoni"
+                placeholder="e.g. Dabra / Gwalior Station / Jhansi"
                 {...register("pickup", { required: "Pickup location is required" })}
                 className="w-full pl-10 pr-4 py-2.5 rounded-xl border border-gray-200 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent text-sm text-gray-800"
               />

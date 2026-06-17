@@ -17,7 +17,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: 1,
     category: "fleet",
-    title: "Toyota Innova Crysta Front View",
+    title: "Toyota Glanza Front View",
     location: "Gwalior Highway",
     image: "https://images.unsplash.com/photo-1619682817481-e994891cd1f5?auto=format&fit=crop&q=80&w=800"
   },
@@ -45,7 +45,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: 5,
     category: "fleet",
-    title: "Swift Dzire Station Pickup Service",
+    title: "Toyota Glanza Station Pickup Service",
     location: "Datia Railway Station",
     image: "https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&q=80&w=800"
   },
@@ -73,7 +73,7 @@ const galleryItems: GalleryItem[] = [
   {
     id: 9,
     category: "fleet",
-    title: "Innova Crysta Premium Cabin View",
+    title: "Toyota Rumion Premium Cabin View",
     location: "Interior Details",
     image: "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?auto=format&fit=crop&q=80&w=800"
   },
@@ -119,22 +119,12 @@ export default function GalleryPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-20 bg-primary text-white overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <Image
-            src="https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1920"
-            alt="Camera lenses & travel gear"
-            fill
-            className="object-cover opacity-20"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-primary via-primary/95 to-primary/80" />
-        </div>
-
+      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
           >
             Travel & Fleet Gallery
           </motion.h1>
@@ -142,7 +132,7 @@ export default function GalleryPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-orange-100 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Browse real snapshots of our premium vehicles on duty and beautiful tourist destinations all across India.
           </motion.p>

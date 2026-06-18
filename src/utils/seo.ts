@@ -26,7 +26,7 @@ export function getLocalBusinessSchema() {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": SEO_DATA.businessName,
-    "image": "https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80",
+    "image": `${SEO_DATA.url}/images/rumiun.jpg`,
     "@id": SEO_DATA.url,
     "url": SEO_DATA.url,
     "telephone": SEO_DATA.phone,

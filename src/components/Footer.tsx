@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
-import { Phone, Mail, MapPin, MessageSquare, ShieldCheck } from "lucide-react";
+import { Phone, Mail, MapPin, MessageSquare, ShieldCheck, Facebook, Instagram, Youtube } from "lucide-react";
 
 export default function Footer() {
   const currentYear = 2025;
 
   return (
-    <footer className="bg-primary-dark text-white border-t-2 border-accent/30 pt-16 pb-8">
+    <footer className="bg-slate-950 text-white border-t-2 border-accent/30 pt-16 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Column 1: About */}
@@ -23,6 +23,46 @@ export default function Footer() {
             <div className="flex items-center gap-2 text-sm text-gray-300">
               <ShieldCheck className="w-5 h-5 text-accent flex-shrink-0" />
               <span>Virendrasingh Patel — Owner & Operator</span>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center gap-3 mt-5">
+              <a 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-[#1877F2] transition-all p-2 bg-white/5 rounded-full hover:bg-white/10 hover:scale-110" 
+                aria-label="Facebook"
+              >
+                <Facebook className="w-4 h-4 fill-current" />
+              </a>
+              <a 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-[#E1306C] transition-all p-2 bg-white/5 rounded-full hover:bg-white/10 hover:scale-110" 
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a 
+                href="https://youtube.com" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-[#FF0000] transition-all p-2 bg-white/5 rounded-full hover:bg-white/10 hover:scale-110" 
+                aria-label="YouTube"
+              >
+                <Youtube className="w-4 h-4 fill-current" />
+              </a>
+              <a 
+                href="https://wa.me/919109403977" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-gray-400 hover:text-[#25D366] transition-all p-2 bg-white/5 rounded-full hover:bg-white/10 hover:scale-110" 
+                aria-label="WhatsApp"
+              >
+                <MessageSquare className="w-4 h-4 fill-current text-white" />
+              </a>
             </div>
           </div>
 
@@ -99,7 +139,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-400">
           <p>© {currentYear} Shri Balaji Travels. All rights reserved.</p>
-          <p>|| Jay Mai Ki || Designed with ❤️ in India</p>
+          <p>|| Jay Mai Ki || Designed & Developed by Sachin Rawat</p>
         </div>
       </div>
     </footer>

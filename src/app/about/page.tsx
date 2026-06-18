@@ -56,12 +56,23 @@ export default function AboutPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
+      <section className="relative py-20 bg-slate-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/images1.jpg"
+            alt="Travel background"
+            fill
+            className="object-cover opacity-35"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-slate-950" />
+        </div>
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
           >
             About Shri Balaji Travels
           </motion.h1>
@@ -69,7 +80,7 @@ export default function AboutPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Toyota Glanza aur Rumion ke saath premium, reliable, aur family-safe chauffeured car rental. Dabra, Gwalior (Madhya Pradesh) se poore India mein service.
           </motion.p>
@@ -114,45 +125,41 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* 3. OUR STORY SECTION (SHIFTED AND CONVERTED TO PREMIUM DARK CONTRAST BACKGROUND) */}
-      <section className="py-20 bg-slate-900 text-white relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-slate-950 to-primary/70 opacity-95" />
-        </div>
-
+      {/* 3. OUR STORY SECTION */}
+      <section className="py-20 bg-slate-50 border-y border-slate-200 text-gray-900 relative overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-12 gap-12 items-center">
             {/* Image side */}
-            <div className="lg:col-span-6 relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl border border-white/10">
+            <div className="lg:col-span-6 relative h-[450px] w-full rounded-2xl overflow-hidden shadow-lg border border-slate-200/60 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl group">
               <Image
-                src="https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80"
+                src="/images/fff.jpg"
                 alt="Toyota Rumion — Shri Balaji Travels Dabra Gwalior"
                 fill
-                className="object-cover"
+                className="object-cover group-hover:scale-105 transition-transform duration-700"
               />
             </div>
 
             {/* Content side */}
             <div className="lg:col-span-6 space-y-6">
-              <span className="text-accent font-bold tracking-widest uppercase text-xs block">Our Heritage</span>
-              <h2 className="text-3xl font-display font-extrabold text-white leading-tight">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs block">Our Heritage</span>
+              <h2 className="text-3xl font-display font-extrabold text-gray-900 leading-tight">
                 A Family-Owned Business Built on Trust
               </h2>
-              <p className="text-gray-300 leading-relaxed font-light">
+              <p className="text-gray-650 leading-relaxed font-light">
                 Shri Balaji Travels ki shuruaat ek humble ambition se hui: Dabra aur Gwalior ke parivaron ko ek aisi high-quality transport dena jis par wo rely kar sakein. Safar mein suraksha sarvopari hai. Hamara lakshya tha ki jab koi beti, maa, ya buzurg hamari gaadi mein baithe — unhe waise hi surakshit mahsoos ho jaise apne ghar ki gaadi mein.
               </p>
-              <p className="text-gray-300 leading-relaxed font-light">
+              <p className="text-gray-650 leading-relaxed font-light">
                 Aaj hum pure Madhya Pradesh aur pan-India me yatriyon ki seva karte hain. Shaadi ki baarat se lekar Pitambara Peeth Datia, Orchha, Ayodhya ke dharmik darshan tak — har yatra mein wahi dedication, saafai, aur local touch jo hamari pehli trip se hai.
               </p>
 
-              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
+              <div className="grid grid-cols-2 gap-4 pt-6 border-t border-slate-200">
                 <div>
-                  <h4 className="text-3xl font-black text-accent font-display">100%</h4>
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase mt-0.5">Commercial Pass Permits</p>
+                  <h4 className="text-3xl font-black text-primary font-display">100%</h4>
+                  <p className="text-[10px] text-gray-500 font-semibold uppercase mt-0.5">Commercial Pass Permits</p>
                 </div>
                 <div>
-                  <h4 className="text-3xl font-black text-accent font-display">24/7</h4>
-                  <p className="text-[10px] text-gray-400 font-semibold uppercase mt-0.5">Emergency Support</p>
+                  <h4 className="text-3xl font-black text-primary font-display">24/7</h4>
+                  <p className="text-[10px] text-gray-500 font-semibold uppercase mt-0.5">Emergency Support</p>
                 </div>
               </div>
             </div>

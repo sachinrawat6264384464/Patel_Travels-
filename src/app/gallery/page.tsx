@@ -119,12 +119,23 @@ export default function GalleryPage() {
   return (
     <div className="pt-24 pb-16 bg-slate-50 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="relative py-16 bg-white border-b border-slate-200 text-gray-900 overflow-hidden">
+      <section className="relative py-20 bg-slate-950 text-white overflow-hidden">
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/images1.jpg"
+            alt="Travel background"
+            fill
+            className="object-cover opacity-35"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-slate-950" />
+        </div>
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="font-display text-4xl sm:text-5xl font-extrabold text-slate-900"
+            className="font-display text-4xl sm:text-5xl font-extrabold text-white"
           >
             Travel & Fleet Gallery
           </motion.h1>
@@ -132,7 +143,7 @@ export default function GalleryPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1 }}
-            className="text-gray-600 max-w-2xl mx-auto text-base sm:text-lg font-light"
+            className="text-gray-300 max-w-2xl mx-auto text-base sm:text-lg font-light"
           >
             Browse real snapshots of our premium vehicles on duty and beautiful tourist destinations all across India.
           </motion.p>

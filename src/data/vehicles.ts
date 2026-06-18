@@ -26,11 +26,11 @@ export const vehicles: Vehicle[] = [
     fuel: "Petrol / CNG",
     ac: true,
     pricePerKm: "Contact for Rates",
-    image: "/images/glanza.png",
+    image: "/images/Toyota_Glanza_car.png",
     images: [
-      "/images/glanza.png",
-      "/images/glanza.png",
-      "/images/glanza.png"
+      "/images/Toyota_Glanza_car.png",
+      "/images/glanza-interior-dashboard.png",
+      "/images/glanza-interior-bootspace-rear-split-seat.png"
     ],
     features: [
       "Comfortable Fabric & Premium Seating",
@@ -60,11 +60,12 @@ export const vehicles: Vehicle[] = [
     fuel: "Petrol / CNG",
     ac: true,
     pricePerKm: "Contact for Rates",
-    image: "/images/rumion.png",
+    image: "/images/rumiun.jpg",
     images: [
-      "/images/rumion.png",
-      "/images/rumion.png",
-      "/images/rumion.png"
+      "/images/rumiun.jpg",
+      "/images/rumion-interior-front-row-seats-2.jpg",
+      "/images/rumion-interior-third-row-seats.jpg",
+      "/images/rumion-interior-bootspace-rear-split-seat-folded.jpg"
     ],
     features: [
       "7-Seater Spacious Cabin",

@@ -4,6 +4,7 @@ import { Inter, Outfit } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
+import Preloader from "@/components/Preloader";
 import { SEO_DATA, getLocalBusinessSchema, getCarRentalSchema } from "@/utils/seo";
 import "./globals.css";
 
@@ -47,7 +48,7 @@ export const metadata: Metadata = {
     siteName: SEO_DATA.businessName,
     images: [
       {
-        url: "https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80",
+        url: `${SEO_DATA.url}/images/rumiun.jpg`,
         width: 664,
         height: 374,
         alt: "Shri Balaji Travels — Toyota Rumion",
@@ -60,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: SEO_DATA.title,
     description: SEO_DATA.description,
-    images: ["https://imgd.aeplcdn.com/664x374/n/cw/ec/169435/rumion-exterior-right-front-three-quarter-3.jpeg?q=80"],
+    images: [`${SEO_DATA.url}/images/rumiun.jpg`],
   },
 };
 
@@ -86,6 +87,7 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-slate-50 text-gray-900 flex flex-col min-h-screen">
+        <Preloader />
         <Navbar />
         <main className="flex-grow">{children}</main>
         <Footer />

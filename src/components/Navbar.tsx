@@ -38,8 +38,8 @@ export default function Navbar() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         showSolidNavbar
-          ? "bg-white/95 backdrop-blur-md shadow-md py-3 border-b border-slate-100"
-          : "bg-transparent py-5"
+          ? "bg-slate-950/95 backdrop-blur-md shadow-md py-3 border-b border-slate-800"
+          : "bg-slate-950/30 backdrop-blur-md py-5 border-b border-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -47,8 +47,8 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <span className="font-display font-black text-xl tracking-wide flex items-center leading-tight">
-              <span className="text-orange-600 mr-1">श्री बालाजी</span>
-              <span className="text-accent">ट्रैवल्स</span>
+              <span className="text-orange-500 mr-1">Shri Balaji</span>
+              <span className="text-accent">Travels</span>
             </span>
           </Link>
 
@@ -62,10 +62,8 @@ export default function Navbar() {
                   href={link.href}
                   className={`text-sm font-medium transition-colors duration-200 ${
                     isActive
-                      ? "text-orange-600 border-b-2 border-accent pb-1 font-semibold"
-                      : showSolidNavbar
-                      ? "text-gray-700 hover:text-orange-600"
-                      : "text-white hover:text-accent drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.5)]"
+                      ? "text-accent border-b-2 border-accent pb-1 font-semibold"
+                      : "text-gray-300 hover:text-white"
                   }`}
                 >
                   {link.name}
@@ -78,10 +76,10 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center space-x-4">
             <a
               href="tel:+919109403977"
-              className="flex items-center space-x-1 text-sm font-medium text-orange-600 hover:text-accent transition-colors"
+              className="flex items-center space-x-1 text-sm font-medium text-gray-300 hover:text-white transition-colors"
             >
               <Phone className="w-4 h-4 text-accent" />
-              <span className={showSolidNavbar ? "text-gray-800 hover:text-orange-600" : "text-white hover:text-accent drop-shadow-[0_1px_1px_rgba(0,0,0,0.5)]"}>+91 91094 03977</span>
+              <span>+91 91094 03977</span>
             </a>
             <Link
               href="/contact?book=true"
@@ -95,9 +93,7 @@ export default function Navbar() {
           <div className="md:hidden flex items-center">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className={`p-2 rounded-md transition-colors ${
-                showSolidNavbar ? "text-orange-600" : "text-white"
-              }`}
+              className="p-2 rounded-md transition-colors text-white hover:text-accent"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -113,7 +109,7 @@ export default function Navbar() {
             : "max-h-0 opacity-0 invisible overflow-hidden"
         }`}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-xl border-t border-gray-100">
+        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-slate-950 shadow-xl border-t border-slate-900">
           {navLinks.map((link) => {
             const isActive = pathname === link.href;
             return (
@@ -123,18 +119,18 @@ export default function Navbar() {
                 onClick={() => setIsOpen(false)}
                 className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
                   isActive
-                    ? "bg-orange-50 text-orange-600 font-semibold"
-                    : "text-gray-700 hover:bg-gray-50 hover:text-orange-600"
+                    ? "bg-slate-900 text-accent font-semibold"
+                    : "text-gray-300 hover:bg-slate-900 hover:text-white"
                 }`}
               >
                 {link.name}
               </Link>
             );
           })}
-          <div className="pt-4 pb-2 border-t border-gray-100 px-3 flex flex-col gap-3">
+          <div className="pt-4 pb-2 border-t border-slate-900 px-3 flex flex-col gap-3">
             <a
               href="tel:+919109403977"
-              className="flex items-center space-x-2 text-base font-medium text-gray-700 hover:text-orange-600"
+              className="flex items-center space-x-2 text-base font-medium text-gray-300 hover:text-white"
             >
               <Phone className="w-5 h-5 text-accent" />
               <span>+91 91094 03977</span>

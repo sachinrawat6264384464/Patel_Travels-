@@ -38,8 +38,6 @@ jobs:
       # Step 1: Checkout the code from GitHub repository
       - name: Checkout Code
         uses: actions/checkout@v4
-        with:
-          description: "Fetching codebase to run static code analysis"
 
       # Step 2: Configure the Node.js runtime environment (LTS version 20)
       - name: Setup Node.js Environment
@@ -52,7 +50,7 @@ jobs:
       - name: Install Dependencies
         run: |
           echo "Installing project dependencies..."
-          npm ci
+          npm install
 
       # Step 4: Run Next.js and ESLint code checks
       - name: Run ESLint Check
@@ -82,7 +80,7 @@ jobs:
       - name: Install Dependencies
         run: |
           echo "Installing project dependencies..."
-          npm ci
+          npm install
 
       # Step 4: Execute unit tests (Vitest)
       - name: Run Test Suite
@@ -114,7 +112,7 @@ jobs:
       - name: Install Dependencies
         run: |
           echo "Installing project dependencies..."
-          npm ci
+          npm install
 
       # Step 4: Cache Next.js compiler build artifacts (crucial for React / Next.js)
       - name: Cache Next.js Compiler Cache

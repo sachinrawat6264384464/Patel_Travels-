@@ -1,0 +1,133 @@
+# ==============================================================================
+# Next.js Web Application Continuous Integration (CI) Pipeline
+# ==============================================================================
+# This workflow runs automatically on every push or pull request to the main branch.
+# It validates code quality, runs unit tests, and verifies the build compiles.
+#
+# Best Practices Implemented:
+# 1. Fail-Fast Execution: Any error fails the build immediately.
+# 2. Parallelization: Linting and Testing run in parallel to save time.
+# 3. Dependency Caching: Caches npm dependencies to speed up runs.
+# 4. Next.js Cache: Caches the Next.js compiler cache between runs to optimize compilation.
+# ==============================================================================
+
+name: Next.js CI Pipeline
+
+# Trigger conditions
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+# Ensure that only one workflow run is active for the same branch/PR at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ----------------------------------------------------------------------------
+  # Job 1: Linting and Code Formatting Validation
+  # ----------------------------------------------------------------------------
+  lint:
+    name: Lint Code Base
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout the code from GitHub repository
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          description: "Fetching codebase to run static code analysis"
+
+      # Step 2: Configure the Node.js runtime environment (LTS version 20)
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm' # Caches npm global cache automatically
+
+      # Step 3: Perform clean install of precise dependency versions
+      - name: Install Dependencies
+        run: |
+          echo "Installing project dependencies..."
+          npm ci
+
+      # Step 4: Run Next.js and ESLint code checks
+      - name: Run ESLint Check
+        run: |
+          echo "Running code linter (next lint)..."
+          npm run lint
+
+  # ----------------------------------------------------------------------------
+  # Job 2: Unit Testing
+  # ----------------------------------------------------------------------------
+  test:
+    name: Run Unit Tests
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout codebase
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js environment
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+
+      # Step 3: Clean install dependencies
+      - name: Install Dependencies
+        run: |
+          echo "Installing project dependencies..."
+          npm ci
+
+      # Step 4: Execute unit tests (Vitest)
+      - name: Run Test Suite
+        run: |
+          echo "Running unit tests with Vitest..."
+          npm run test
+
+  # ----------------------------------------------------------------------------
+  # Job 3: Build Verification & Next.js Compilation
+  # ----------------------------------------------------------------------------
+  build:
+    name: Validate Application Build
+    runs-on: ubuntu-latest
+    # Run only if both linting and testing jobs completed successfully
+    needs: [lint, test]
+    steps:
+      # Step 1: Checkout codebase
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js environment
+      - name: Setup Node.js Environment
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.x
+          cache: 'npm'
+
+      # Step 3: Clean install dependencies
+      - name: Install Dependencies
+        run: |
+          echo "Installing project dependencies..."
+          npm ci
+
+      # Step 4: Cache Next.js compiler build artifacts (crucial for React / Next.js)
+      - name: Cache Next.js Compiler Cache
+        uses: actions/cache@v4
+        with:
+          path: ${{ github.workspace }}/.next/cache
+          # Unique cache key based on OS, package-lock, and code content
+          key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('src/**/*.{js,jsx,ts,tsx}') }}
+          restore-keys: |
+            ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
+
+      # Step 5: Build production Next.js assets
+      - name: Validate Next.js Build
+        run: |
+          echo "Building Next.js application..."
+          npm run build

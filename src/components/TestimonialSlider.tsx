@@ -107,7 +107,7 @@ export default function TestimonialSlider() {
 
               {/* Review Text */}
               <p className="text-gray-700 text-lg md:text-xl italic leading-relaxed mb-6 font-medium">
-                "{test.text}"
+                &ldquo;{test.text}&rdquo;
               </p>
 
               {/* Reviewer Details */}
